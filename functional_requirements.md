@@ -27,5 +27,5 @@
 ### 5. Updating Rental Charges
 - **Requirement**: The system should allow an admin or authorized user to update the rental charges for different types of cars.
 - **Black-box Test Case**:
-  - **Test Input**: An admin updates the rental charge for SUVs from $50/day to $60/day.
+  - **Test Input**: An admin updates the rental charge for SUVs from $180/day to $220/day.
   - **Expected Output**: The system updates the rate successfully, and new reservations reflect the updated charge.
