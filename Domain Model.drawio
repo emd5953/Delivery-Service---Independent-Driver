@@ -2,8 +2,43 @@
   <diagram name="Page-1" id="Pi7ekk1gOqCMkIKP1s1b">
     <mxGraphModel dx="1050" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
+        <!-- Root container -->
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+
+        <!-- Driver entity -->
+        <mxCell id="8dF4_pI3xmYzBbSQNe2d-1" value="Driver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Reservation entity -->
+        <mxCell id="8dF4_pI3xmYzBbSQNe2d-2" value="Reservation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Extension entity -->
+        <mxCell id="8dF4_pI3xmYzBbSQNe2d-3" value="Extension" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Admin entity -->
+        <mxCell id="8dF4_pI3xmYzBbSQNe2d-4" value="Admin" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Rental Charge entity -->
+        <mxCell id="8dF4_pI3xmYzBbSQNe2d-5" value="Rental Charge" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Discount entity -->
+        <mxCell id="8dF4_pI3xmYzBbSQNe2d-6" value="Discount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        
+        <!-- Driver "makes" Reservation -->
         <mxCell id="8dF4_pI3xmYzBbSQNe2d-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8dF4_pI3xmYzBbSQNe2d-1" target="8dF4_pI3xmYzBbSQNe2d-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -12,6 +47,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+
+        <!-- Driver "requests" Extension -->
         <mxCell id="8dF4_pI3xmYzBbSQNe2d-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8dF4_pI3xmYzBbSQNe2d-1" target="8dF4_pI3xmYzBbSQNe2d-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -20,9 +57,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8dF4_pI3xmYzBbSQNe2d-1" value="Driver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
-        </mxCell>
+
+        <!-- Reservation "has" Rental Charge -->
         <mxCell id="8dF4_pI3xmYzBbSQNe2d-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8dF4_pI3xmYzBbSQNe2d-2" target="8dF4_pI3xmYzBbSQNe2d-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -31,6 +67,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+
+        <!-- Reservation "may have" Discount -->
         <mxCell id="8dF4_pI3xmYzBbSQNe2d-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8dF4_pI3xmYzBbSQNe2d-2" target="8dF4_pI3xmYzBbSQNe2d-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -39,6 +77,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+
+        <!-- Reservation "reserves" Car -->
         <mxCell id="8dF4_pI3xmYzBbSQNe2d-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="8dF4_pI3xmYzBbSQNe2d-2" target="8dF4_pI3xmYzBbSQNe2d-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -47,12 +87,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8dF4_pI3xmYzBbSQNe2d-2" value="Reservation&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="290" y="40" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="8dF4_pI3xmYzBbSQNe2d-3" value="Extension&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="200" width="120" height="60" as="geometry" />
-        </mxCell>
+
+        <!-- Admin "updates" Rental Charge -->
         <mxCell id="8dF4_pI3xmYzBbSQNe2d-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="8dF4_pI3xmYzBbSQNe2d-4" target="8dF4_pI3xmYzBbSQNe2d-5">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -66,15 +102,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8dF4_pI3xmYzBbSQNe2d-4" value="Admin" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="200" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="8dF4_pI3xmYzBbSQNe2d-5" value="Rental Charge" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="120" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="8dF4_pI3xmYzBbSQNe2d-6" value="Discount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="120" width="120" height="60" as="geometry" />
-        </mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
